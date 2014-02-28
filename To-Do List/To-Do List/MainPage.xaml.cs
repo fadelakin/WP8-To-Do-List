@@ -55,6 +55,8 @@ namespace To_Do_List
         }
 
         // Uses IsolatedStorage to retrieve saved tasks
+        // TODO: Switch LoadTasks to pull from Parse server instead
+        // Basically all todos will be stored online.
         private void LoadTasks()
         {
             IsolatedStorageFile isfData = IsolatedStorageFile.GetUserStoreForApplication();
